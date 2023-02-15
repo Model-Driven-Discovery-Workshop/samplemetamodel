@@ -49,7 +49,7 @@ def run_model(parameters):
 
     # The SEVIRD model differential equations.
     def deriv(y, t):
-        S, E, I, R, D, V, II= y
+        S, E, I, R, D, V = y
         t=int(t)
         dSdt = -beta0[t] * (S/N) * I - S * nu
         dEdt = beta0[t] * (S/N) * I - alpha * E
