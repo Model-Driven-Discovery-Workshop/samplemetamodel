@@ -78,7 +78,6 @@ def run_model(parameters):
             'susceptible': S[day],
             'exposed': E[day],
             'infectious': I[day],
-            'positive':II[day],
             'quarantined': None,
             'hospital': None,
             'icu': None,
